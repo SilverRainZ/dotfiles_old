@@ -10,6 +10,7 @@ def main():
         op = sys.argv[1]
     else:
         help()
+        exit()
 
     if len(sys.argv) > 2:
         target = sys.argv[2]
@@ -29,7 +30,7 @@ def main():
         print("[x] Unknown operation")
 
 def help():
-    helpstr = [ 'sync'
+    helpstr = [ 'sync   -- a simple script used to sync profile'
               , 'python sync.py [operation]'
               , 'python sync.py [operation] [target]'
               , 'operation:'
