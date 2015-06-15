@@ -98,7 +98,6 @@ def sync(op):
     if op == 'add':
         print('[+] git add .')
         os.system('git add .')
-        os.system('git diff')
 
     if op == 'push':
         commitlog = str(datetime.datetime.now())
