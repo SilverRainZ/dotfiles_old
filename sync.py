@@ -30,7 +30,7 @@ def main():
             deploy(op, target)
         else:
             print('[x] Missing target.')
-    elif op in ['pull', 'push']:
+    elif op in ['add', 'pull', 'push']:
         sync(op)
     else:
         help()
